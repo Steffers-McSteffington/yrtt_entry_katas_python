@@ -22,4 +22,42 @@
 # The first element 80 is the total weight of team 1, and the second element 0 is the total weight of team 2.
 
 def row_weights(array):
-    return
+
+    # SOLUTION 1
+    # create two lists: team_one and team_two
+    # iterate over array once -
+        # if in even position in array move value to team_one list
+        # if in odd position in array move value to team_two list
+        # repeat until list empty
+    # add all the values in team_one list together and record output
+    # add all the values in team_two list together and record output
+
+    # SOLUTION 2
+    # iterate over array
+        # add all key values for elements in an even position together
+        # save the result
+        # add all key values for elements in an odd position together
+        # save the result
+
+    # SOLUTION 3
+    # Like a production line sorting parcels - x goes one way and is grouped together, y goes another/different way and is grouped together
+    # return values for the grouped things
+
+
+    team_one = []
+    team_two = []
+    for weight in array:
+        if weight in array[0::2]:
+            team_one.append(weight)
+        if weight in array[1::2]:
+            team_two.append(weight)
+
+    team_one_total = 0
+    for weight in team_one:
+        team_one_total = team_one_total + weight
+
+    team_two_total = 0
+    for weight in team_two:
+        team_two_total = team_two_total + weight
+
+    return [team_one_total, team_two_total]

@@ -10,3 +10,8 @@ def test_pig_latin_returns_string():
 
 def test_pig_latin_punctuation():
     assert pig_it("Pig latin is cool!!") == "igPay atinlay siay oolcay!!"
+
+
+# considerations/ additional tests:
+    # what if the word is a single letter without punctuation
+    # what if the word is a contraction (e.g. 'til)

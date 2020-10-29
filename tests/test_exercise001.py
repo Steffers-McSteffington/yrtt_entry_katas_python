@@ -18,3 +18,6 @@ def test_exercise_check_with_singles():
 
 def test_exercise_check_with_no_valid_singles():
     assert repeats([6, 6, 8, 8]) == 0
+
+
+    # test case required where 0 is a single value

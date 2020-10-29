@@ -33,5 +33,6 @@ def test_exercise_row_weights():
     assert row_weights([29,83,67,53,19,28,96]) == [211,164]
     assert row_weights([0]) == [0,0]
     assert row_weights([100,51,50,100]) == [150,151]
+    assert row_weights([1,2,2,1]) == [3,3]
     assert row_weights([39,84,74,18,59,72,35,61]) == [207,235]
     assert row_weights([0,1,0]) == [0,1]

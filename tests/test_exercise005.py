@@ -33,3 +33,8 @@ def test_two_words():
 
 def test_with_gap():
     assert wave(" gap ") ==  [" Gap ", " gAp ", " gaP "]
+
+
+# considerations/ additional tests:
+    # including word(s) with punctuation
+
