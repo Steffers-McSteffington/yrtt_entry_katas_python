@@ -15,3 +15,4 @@ def test_exercise_past():
 
 def test_exercise_check_past_no_difference():
     assert past(0,0,0) == 0
+

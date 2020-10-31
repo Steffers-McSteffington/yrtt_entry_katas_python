@@ -34,7 +34,9 @@ def test_two_words():
 def test_with_gap():
     assert wave(" gap ") ==  [" Gap ", " gAp ", " gaP "]
 
+def test_with_punctuation():
+    assert wave("isn't") == ["Isn't", "iSn't", "isN't", "isn'T"]
 
 # considerations/ additional tests:
-    # including word(s) with punctuation
+    # including word(s) with punctuation - this fails because my code has no notion of how to handle punctuation, it recognises that the apostrophe/character is there which is why all of the letters are lowercase in the 4th iteration of the word.
 

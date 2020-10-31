@@ -11,6 +11,4 @@ def pig_it(text):
     # add punctuation from variable to end of the modified string
 
 
-# sub string
-
     return

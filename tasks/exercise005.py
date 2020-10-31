@@ -20,20 +20,24 @@
 
 def wave(people):
 
+    # create new list
+
+    mexican_wave = []
+
     # iterate over input string
+
+    for i, arms in enumerate(people):
+
         # if empty take no action
         # skip over/ignore whitespace
-        # if string present capitalise the first letter
-            # append the output to the list
+
+        if people[i] != " ":
+
+        # if string present
             # iterate over the string until no more letters
             # for each iteration move the capitalised letter one place - append the output each time
 
-    contiguous = []
-
-    for i, arms in enumerate(people):
-        if people[i] != " ":
             waves = people[:i] + people[i].upper() + people[i+1:]
-            contiguous.append(waves)
+            mexican_wave.append(waves)
 
-
-    return contiguous
+    return mexican_wave
